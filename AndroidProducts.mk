@@ -6,8 +6,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lmodroid_mars.mk
-
-COMMON_LUNCH_CHOICES := \
-    lmodroid_mars-user \
-    lmodroid_mars-userdebug \
-    lmodroid_mars-eng
