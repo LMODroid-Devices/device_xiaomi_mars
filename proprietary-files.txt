@@ -1,4 +1,4 @@
-# These proprietary files are extracted from star OS1.0.4.0.UKAMIXM, note the pinned blobs
+# These proprietary files are extracted from star OS1.0.6.0.UKAMIXM
 
 # ACDB
 vendor/etc/acdbdata/Tutu/Tutu_Bluetooth_cal.acdb
@@ -132,9 +132,19 @@ vendor/lib/libresampler.so
 vendor/lib/libsndmonitor.so
 vendor/lib/libspkrprot.so
 vendor/lib/libssrec.so
-vendor/lib/libvideoNS.so
+vendor/lib/libvideoNS.so;DISABLE_CHECKELF
 
 # Camera
+vendor/lib/libbitmlengine.so
+vendor/lib/libcamera_nn_stub.so
+vendor/lib/libofflinelog.so
+vendor/lib/libopencv.so
+vendor/lib/libsns_fastRPC_util.so
+vendor/lib/libsns_low_lat_stream_stub.so
+vendor/lib/libsnsapi.so
+vendor/lib/libsnsdiaglog.so
+vendor/lib/vendor.xiaomi.hardware.cameraperf@1.0-impl.so
+vendor/lib/vendor.xiaomi.hardware.cameraperf@1.0.so
 vendor/lib64/HDR10plus.so
 vendor/lib64/camera/com.qti.eeprom.mars_ofilm_ov13b10_p24c64f_ultra_eeprom.so
 vendor/lib64/camera/com.qti.eeprom.mars_semco_s5kgn2_p24c128e_eeprom.so
@@ -222,11 +232,13 @@ vendor/lib64/libFlickerDet.so
 vendor/lib64/libI420colorconvert.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libSuperSensorCPU.so
+vendor/lib64/libSuperSensorHVX.so
+vendor/lib64/libSuperSensorSDK.so
 vendor/lib64/libaidenoiser.so
-vendor/lib64/libalAILDC.so
+vendor/lib64/libalAILDC.so;DISABLE_CHECKELF
 vendor/lib64/libalCFR.so
-vendor/lib64/libalLDC.so
-vendor/lib64/libalhLDC.so
+vendor/lib64/libalLDC.so;DISABLE_CHECKELF
+vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libblink.so
 vendor/lib64/libc++_shared.so
@@ -256,7 +268,7 @@ vendor/lib64/libmialgo_ellc.so
 vendor/lib64/libmialgo_ie_capture.so
 vendor/lib64/libmialgo_ie_preview.so
 vendor/lib64/libmialgo_image_colourkeeping.so
-vendor/lib64/libmialgo_pureShot.so
+vendor/lib64/libmialgo_pureShot.so;DISABLE_CHECKELF
 vendor/lib64/libmialgo_rfs.so
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
@@ -270,14 +282,10 @@ vendor/lib64/libmibokeh_mask.so
 vendor/lib64/libmibokeh_mask_dsp.so
 vendor/lib64/libmicuttlefish_fs.so
 vendor/lib64/libmicuttlefish_utils.so
-vendor/lib64/libmiface.so
 vendor/lib64/libminziparchive.so
 vendor/lib64/libmiphone_capture_bokeh.so
 vendor/lib64/libmiphone_preview_bokeh.so
-vendor/lib64/libmiracast.so
-vendor/lib64/libmiriskmanager.so
-vendor/lib64/libmisecurity.so
-vendor/lib64/libmisight.so
+vendor/lib64/libmisight.so;DISABLE_CHECKELF
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libmmhardware.so
@@ -290,8 +298,9 @@ vendor/lib64/libopenvx.so
 vendor/lib64/libopestriping.so
 vendor/lib64/libos.so
 vendor/lib64/libportrait_blur.so
+vendor/lib64/libpowercore.so
 vendor/lib64/libqll10.so
-vendor/lib64/libqllengine.so
+vendor/lib64/libqllengine.so;DISABLE_CHECKELF
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libremosaiclib.so
 vendor/lib64/libsnpe_htp.so
@@ -313,7 +322,6 @@ vendor/lib64/libvidhance.so
 vendor/lib64/libwa_opticalzoom_fusion.so
 vendor/lib64/libwa_opticalzoomfactor.so
 vendor/lib64/libwa_sat.so
-vendor/lib64/libwapi_cert.so
 vendor/lib64/libxmi_hdr_SR.so
 vendor/lib64/libxmi_hdr_bokeh.so
 vendor/lib64/libxmi_hdr_checker.so
@@ -328,11 +336,11 @@ vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_bodyslim.so
 vendor/lib64/libarcsoft_distortion_correction.so
-vendor/lib64/libarcsoft_hdrplus_hvx_stub.so
+vendor/lib64/libarcsoft_hdrplus_hvx_stub.so;DISABLE_CHECKELF
 vendor/lib64/libarcsoft_portrait_lighting.so
 vendor/lib64/libarcsoft_portrait_lighting_c.so
 vendor/lib64/libarcsoft_qnnhtp.so
-vendor/lib64/libarcsoft_super_night_raw.so
+vendor/lib64/libarcsoft_super_night_raw.so;DISABLE_CHECKELF
 
 # Camera (camerax)
 vendor/lib/libcamxexternalformatutils.so
@@ -617,7 +625,7 @@ vendor/lib64/camera/plugins/com.xiaomi.plugin.supermoon.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.supernight.so
 vendor/lib64/libXMFace.so
 vendor/lib64/libanc_dc_base.so
-vendor/lib64/libanc_dc_plugin_xiaomi_v2.so
+vendor/lib64/libanc_dc_plugin_xiaomi_v2.so;DISABLE_CHECKELF
 vendor/lib64/libanc_hdr.so
 vendor/lib64/libancbase.so
 vendor/lib64/libcom.xiaomi.debug.so
@@ -626,7 +634,7 @@ vendor/lib64/libcom.xiaomi.metadatautils.so
 vendor/lib64/libcom.xiaomi.pluginutils.so
 vendor/lib64/libmiStereoFactoryRemapBasicLib.so
 vendor/lib64/libmiStereoFactoryRemapLib.so
-vendor/lib64/libmiStereoFactoryRemapLib_v2.so
+vendor/lib64/libmiStereoFactoryRemapLib_v2.so;FIX_SONAME
 vendor/lib64/libmivsock_utils.so
 vendor/lib64/librelight_only.so
 vendor/lib64/libsupermoon.so
@@ -636,7 +644,7 @@ vendor/lib/libjpege.so
 vendor/lib/libmctfengine_stub.so
 vendor/lib/libmmcamera_bestats.so
 vendor/lib/libmmcamera_cac3.so
-vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_faceproc.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera_lscv35.so
 vendor/lib/libmmcamera_mfnr.so
@@ -646,7 +654,7 @@ vendor/lib64/libjpege.so
 vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmmcamera_bestats.so
 vendor/lib64/libmmcamera_cac3.so
-vendor/lib64/libmmcamera_faceproc.so
+vendor/lib64/libmmcamera_faceproc.so;DISABLE_CHECKELF
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_lscv35.so
 vendor/lib64/libmmcamera_mfnr.so
@@ -708,11 +716,11 @@ vendor/etc/mdss_dsi_k2_38_08_0a_dsc_cmd_mi.xml
 vendor/etc/mdss_dsi_k2_38_08_0a_mp_dsc_cmd_mi.xml
 vendor/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml
 
-# Fingerprint - from miui_STAR_V13.0.13.0.SKACNXM
--vendor/etc/vintf/manifest/fod.xml|0787f763410fce0aae90a3afd807e9fdb2e6ccc4
-vendor/lib64/com.fingerprints.extension@3.0.so|9e9bf48b9dff08f500734027f7bb5e382df69fef
-vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.lahaina.so|ff22a59c5dd58b83b0faaac74255d2cba7ebab11
-vendor/lib64/libgf_hal.so|f12f750d31e94a18fc8b6027340c7a0e2c6a31e5
+# Fingerprint
+vendor/etc/vintf/manifest/fod.xml
+vendor/lib64/com.fingerprints.extension@3.0.so
+vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.lahaina.so;FIX_SONAME
+vendor/lib64/libgf_hal.so
 
 # Fingerprint dtool
 vendor/bin/hw/vendor.xiaomi.hardware.dtool@1.0-service
@@ -801,7 +809,9 @@ vendor/etc/elliptic_sensor.xml
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/lib64/libnotifyaudiohal.so
+vendor/lib/libsensorslog.so
+vendor/lib/libssc.so
+vendor/lib64/libnotifyaudiohal.so;FIX_SONAME
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libssc.so
@@ -812,6 +822,14 @@ vendor/lib64/sensors.elliptic@2.0.so
 vendor/lib64/sensors.mius.proximity.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/sensors.touch.detect.so
+
+# Sensors (citsensor)
+vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
+vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
+vendor/etc/vintf/manifest/vendor.xiaomi.hardware.citsensorservice@1.1-service.xml
+vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
 
 # Sensors configs
 vendor/etc/sensors/calibratedCheck.json
